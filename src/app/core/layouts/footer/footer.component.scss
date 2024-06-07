@@ -1,11 +1,17 @@
-.footer-container {
-  display: flex;
+footer {
   background-color: #280342;
-  justify-content: space-between;
   min-height: 158px;
   color: #97A0A7;
   font-size: 14px;
   padding: 24px;
+  width: 100%;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-contacts {
