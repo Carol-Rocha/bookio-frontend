@@ -1,1 +1,42 @@
-<p>nav-bar works!</p>
+<section class="sideNav">
+  <nav class="sideNav__container">
+    <div class="sideNav__container--ogo">
+      <span>Bookio</span>
+    </div>
+    <div class="sideNav__container--search">
+      <img src="assets/icons/SearchIcon.svg" alt="Barra de pesquisa" />
+      <input type="text" placeholder="Busque por título, autor, editora..." />
+    </div>
+    <div class="sideNav__container--profile">
+      <img
+        src="assets/img/perfilTeste.svg"
+        alt="imagem de perfil"
+        id="profile-photo"
+      />
+      <button mat-icon-button [matMenuTriggerFor]="navMenu" id="menu-button">
+        <mat-icon class="material-icons-round">expand_more</mat-icon>
+        <!-- <img src="assets/icons/ArrowDownIcon.svg" alt="botão menu" /> -->
+      </button>
+    </div>
+  </nav>
+</section>
+
+<mat-menu #navMenu yPosition="below" xPosition="before">
+  <ul class="profileMenu" >
+    <li>
+      <img
+        src="../../../../assets/icons/PersonIcon.svg"
+        alt="ícone de perfil"
+      />
+      <span>Meu Perfil</span>
+    </li>
+    <li>
+      <img src="../../../../assets/icons/BookIcon.svg" alt="ícone de estante" />
+      <span>Minha estante</span>
+    </li>
+    <li>
+      <img src="../../../../assets/icons/LogoutIcon.svg" alt="ícone de sair" />
+      <span>Sair</span>
+    </li>
+  </ul>
+</mat-menu>
