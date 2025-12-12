@@ -1,0 +1,67 @@
+// -------------------------------------------------------------
+// TYPOGRAPHY
+// -------------------------------------------------------------
+
+@import './variables';
+
+// Font families
+body {
+  font-family: $font-sans;
+  color: color(neutral, 600);
+  background: color(neutral, 50);
+}
+
+// HEADINGS — serif literária
+h1, .h1 {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: color(neutral, 700);
+}
+
+h2, .h2 {
+  font-family: $font-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: color(neutral, 700);
+}
+
+h3, .h3 {
+  font-family: $font-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: color(neutral, 700);
+}
+
+h4, .h4 {
+  font-family: $font-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: color(neutral, 700);
+}
+
+// BODY TEXT
+.body-md {
+  font-family: $font-sans;
+  font-size: 1rem;
+  font-weight: 400;
+  color: color(neutral, 600);
+}
+
+.body-sm {
+  font-family: $font-sans;
+  font-size: 0.875rem;
+  color: color(neutral, 500);
+}
+
+// MIXINS PARA USO EM COMPONENTES
+@mixin title {
+  font-family: $font-serif;
+  font-weight: 600;
+  color: color(neutral, 700);
+}
+
+@mixin body {
+  font-family: $font-sans;
+  color: color(neutral, 600);
+}
