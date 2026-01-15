@@ -1,0 +1,122 @@
+// Arquivo apenas com variáveis de cores
+// Importar este arquivo em qualquer componente SCSS que precise usar cores
+
+// CSS VARIABLES (Custom Properties) - Disponíveis globalmente
+:root {
+  --primary-300: #F3B18A;
+  --primary-400: #E98B5E;
+  --primary-500: #D86A3A;
+  --primary-600: #C4512C;
+
+  --secondary-400: #F1C88E;
+  --secondary-500: #E4B372;
+  --secondary-600: #C4934B;
+
+  --neutral-50: #FAF6F1;
+  --neutral-100: #F2E9E2;
+  --neutral-200: #E6DCD4;
+  --neutral-300: #D6C7BD;
+  --neutral-400: #B79E92;
+  --neutral-500: #8C746C;
+  --neutral-600: #6A5048;
+  --neutral-700: #4A332E;
+
+  --success-100: #E5EFE3;
+  --success-500: #759568;
+
+  --error-100: #F6E8E8;
+  --error-500: #B84040;
+
+  --warning-100: #FAF0D9;
+  --warning-500: #D49A3A;
+
+  --info-100: #E5EDF1;
+  --info-500: #7A99AD;
+
+  --accent-olive: #7E8B5E;
+  --accent-wine: #803B4D;
+}
+
+// COLORS MAP (para SCSS)
+$colors: (
+  primary: (
+    300: #F3B18A,
+    400: #E98B5E,
+    500: #D86A3A,
+    600: #C4512C
+  ),
+  secondary: (
+    400: #F1C88E,
+    500: #E4B372,
+    600: #C4934B
+  ),
+  neutral: (
+    50:  #FAF6F1,
+    100: #F2E9E2,
+    200: #E6DCD4,
+    300: #D6C7BD,
+    400: #B79E92,
+    500: #8C746C,
+    600: #6A5048,
+    700: #4A332E
+  ),
+  success: (
+    100: #E5EFE3,
+    500: #759568
+  ),
+  error: (
+    100: #F6E8E8,
+    500: #B84040
+  ),
+  warning: (
+    100: #FAF0D9,
+    500: #D49A3A
+  ),
+  info: (
+    100: #E5EDF1,
+    500: #7A99AD
+  ),
+  accent: (
+    olive: #7E8B5E,
+    wine:  #803B4D
+  )
+);
+
+// COLOR VARIABLES (SCSS)
+$primary-300: #F3B18A;
+$primary-400: #E98B5E;
+$primary-500: #D86A3A;
+$primary-600: #C4512C;
+
+$secondary-400: #F1C88E;
+$secondary-500: #E4B372;
+$secondary-600: #C4934B;
+
+$neutral-50: #FAF6F1;
+$neutral-100: #F2E9E2;
+$neutral-200: #E6DCD4;
+$neutral-300: #D6C7BD;
+$neutral-400: #B79E92;
+$neutral-500: #8C746C;
+$neutral-600: #6A5048;
+$neutral-700: #4A332E;
+
+$success-100: #E5EFE3;
+$success-500: #759568;
+
+$error-100: #F6E8E8;
+$error-500: #B84040;
+
+$warning-100: #FAF0D9;
+$warning-500: #D49A3A;
+
+$info-100: #E5EDF1;
+$info-500: #7A99AD;
+
+$accent-olive: #7E8B5E;
+$accent-wine: #803B4D;
+
+// COLOR FUNCTION
+@function color($group, $shade) {
+  @return map-get(map-get($colors, $group), $shade);
+}
