@@ -1,19 +1,18 @@
 .header {
   background-color: #ffffff;
-  max-height: 72px;
+  padding: 0 1.75rem;
 }
 
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 4rem;
-  // background-color: blue;
+  padding: 0.75rem 1.5rem;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .header-left {
@@ -32,7 +31,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #f9fafb;
+  background-color: var(--background-100);
+  border: 1px solid var(--border-100);
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.5rem;
@@ -40,10 +40,9 @@
   flex: 1;
   max-width: 500px;
   cursor: pointer;
-  // background-color: red;
 
   @media (max-width: 768px) {
-    display: none;
+    // display: none;
   }
 }
 
@@ -62,7 +61,7 @@
   transition: width 0.3s ease;
 
   &::placeholder {
-    color: #9ca3af;
+    color: var(--neutral-700);
   }
 
   @media (min-width: 768px) {
@@ -77,8 +76,12 @@
 .header-right {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 1.5rem;
   align-items: center;
+
+  @media (min-width: 768px) {
+    gap: 1.75rem;
+  }
 }
 
 .user-section {
@@ -109,6 +112,13 @@
   }
 }
 
+.user-name {
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
 .dropdown-button {
   background: none;
   border: none;
@@ -119,5 +129,11 @@
 
   &:hover {
     opacity: 0.8;
+  }
+  img {
+    height: 12px;
+    width: 16px;
+    object-fit: contain;
+    display: block;
   }
 }
