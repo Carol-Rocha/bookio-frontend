@@ -1,32 +1,36 @@
-<header class="bg-white">
-  <div class="mx-auto px-16 py-4">
-    <div class="flex items-center justify-between">
-      <div class="flex flex-row gap-20 bg-primary-500">
+<header class="header">
+  <div class="header-container">
+    <div class="header-content">
+      <div class="header-left">
         <img
           src="../../../../assets/img/logo-bookio.png"
           alt="logo-bookio"
-          class="h-10 w-auto"
+          class="header-logo"
         />
-        <div
-          class="flex flex-row items-center bg-primary-50 pl-4 pr-4 bg-neutral-50 rounded-lg gap-2"
-        >
+        <!-- <div>teste mobile</div> -->
+        <div class="header-search">
           <img
             src="../../../../assets/img/icons/SearchIcon.svg"
-            alt="icon-serach"
-            class="h-5 w-auto"
+            alt="icon-search"
+            class="search-icon"
           />
           <input
             type="text"
-            class="bg-transparent outline-none "
+            class="search-input"
             placeholder="Busque por título, autor, editora..."
           />
         </div>
       </div>
-      <div class="flex flex-row gap-12 bg-primary-600">
-        <div class="flex flex-row gap-2">
-          <img src="" alt="user-photo" /> <span>Ola,"User Name"!</span>
+      <div class="header-right">
+        <div class="user-section">
+          <img
+            src="../../../../assets/img/dda80692-7380-45b2-97f4-10f0f049979e.JPG"
+            alt="user-photo"
+            class="user-photo"
+          />
+          <span class="user-name">Ola,"User Name"!</span>
         </div>
-        <button>
+        <button class="dropdown-button">
           <img
             src="../../../../assets/img/icons/ArrowDownIcon.svg"
             alt="arrow-down-icon"
